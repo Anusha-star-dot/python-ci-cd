@@ -4,9 +4,9 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 
-@app.route("/health", methods=["GET"])
+@app.route("/health")
 def health():
-    return jsonify({"status": "UP"}), 200
+    return "OK"
 
 
 if __name__ == "__main__":
